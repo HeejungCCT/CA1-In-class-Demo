@@ -38,5 +38,23 @@
                         </xsl:for-each>
                     </tbody>
                 </table><br/>
+                <div class="col-lg-4 text-center order-2">
+            <form enctype="application/json" action="/post/json" method="post">
+                <div class="form-group">
+                    <select class="form-control" name="sec_n">
+                        <option value="0">Side Dishes</option>
+                        <option value="1">Breakfast</option>
+                        <option value="2">Lunch</option>
+                        <option value="3">Dinner</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="item" placeholder="Item"></input>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="price" placeholder="Price"></input>>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
     </xsl:template>
 </xsl:stylesheet>
