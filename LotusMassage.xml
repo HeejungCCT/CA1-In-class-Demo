@@ -5,8 +5,8 @@
       <item>Back, Neck and Shoulders Massage</item>
       <session>30 minutes</session>
       <price>€35</price>
-     </type> 
-     <type>
+    </type>
+    <type>
       <item>Head Massage</item>
       <session>30 minutes</session>
       <price>€35</price>
@@ -15,7 +15,7 @@
       <item>Foot Reflexology</item>
       <session>30 minutes</session>
       <price>€35</price>
-    </type>         
+    </type>
     <type>
       <item>Thai Massage</item>
       <session>1 hour</session>
@@ -35,11 +35,16 @@
       <item>Pregnant Massage</item>
       <session>1 hour</session>
       <price>€60</price>
-    </type>  
+    </type>
     <type>
       <item>Holistic Massage</item>
       <session>90 minutes</session>
       <price>€90</price>
+    </type>
+    <type>
+      <item>Kimchi</item>
+      <session>40 minutes</session>
+      <price>5.00</price>
     </type>
   </section>
   <section name="Package">
@@ -48,7 +53,7 @@
       <session>10 sessions</session>
       <price>€315</price>
     </type>
-   <type>
+    <type>
       <item>1 hour</item>
       <session>10 sessions</session>
       <price>€540</price>

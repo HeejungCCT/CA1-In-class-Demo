@@ -25,10 +25,10 @@
                                 <!-- <xsl:attribute name="pregnant">
                                     <xsl:value-of select="boolean(./@pregnant)" />
                                 </xsl:attribute> -->
-                                <td>
+                                <td align="left" >
                                     <xsl:value-of select="item" />
                                 </td>
-                                <td>
+                                <td align="left">
                                     <xsl:value-of select="session" />
                                 </td>
                                 <td align="right">

@@ -6,6 +6,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   background-color: #d5f7d0;
+
 }
 .footer {
   position: absolute;
@@ -18,8 +19,9 @@ body {
 }
 table, th, td {
      border-collapse: collapse;
-     border: 1px solid rgb(17, 49, 3);
+     border: 1px solid rgb(33, 100, 4);
      text-align: center;
+
 }
  table {
      border-collapse: collapse;
@@ -32,6 +34,7 @@ table, th, td {
 }
  th {
      font-weight: bold;
+     font-style: oblique;
 }
 .selected {
             background-color: #043004;
