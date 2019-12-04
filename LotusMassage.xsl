@@ -7,10 +7,10 @@
                             <th colspan="4">Lotus Massage Menu</th>
                         </tr>
                         <tr>
-                            <th>Select</th>
                             <th>Item</th>
                             <th>Session</th>
                             <th>Price</th>
+                            <th>Select</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -22,12 +22,9 @@
                             </tr>
                             <xsl:for-each select="type">
                             <tr id="{position()}">
-                                <xsl:attribute name="pregnant">
+                                <!-- <xsl:attribute name="pregnant">
                                     <xsl:value-of select="boolean(./@pregnant)" />
-                                </xsl:attribute>
-                                <td align="center">
-                                    <input name="item0" type="checkbox" />
-                                </td>
+                                </xsl:attribute> -->
                                 <td>
                                     <xsl:value-of select="item" />
                                 </td>
@@ -36,6 +33,9 @@
                                 </td>
                                 <td align="right">
                                     <xsl:value-of select="price" />
+                                </td>
+                                <td align="center">
+                                    <input name="item0" type="checkbox" />
                                 </td>
                             </tr>
                             </xsl:for-each>
