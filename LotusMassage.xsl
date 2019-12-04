@@ -4,31 +4,35 @@
                 <table id="menuTable" class="indent">
                     <thead>
                         <tr>
-                            <th colspan="3">Paddy's Cafe Menu</th>
+                            <th colspan="4">Lotus Massage Menu</th>
                         </tr>
                         <tr>
                             <th>Select</th>
                             <th>Item</th>
+                            <th>Session</th>
                             <th>Price</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <xsl:for-each select="/cafemenu/section">
+                        <xsl:for-each select="/massagemenu/section">
                             <tr>
-                                <td colspan="3">
+                                <td colspan="4">
                                     <xsl:value-of select="@name" />
                                 </td>
                             </tr>
-                            <xsl:for-each select="entree">
+                            <xsl:for-each select="type">
                             <tr id="{position()}">
-                                <xsl:attribute name="vegetarian">
-                                    <xsl:value-of select="boolean(./@vegetarian)" />
+                                <xsl:attribute name="pregnant">
+                                    <xsl:value-of select="boolean(./@pregnant)" />
                                 </xsl:attribute>
                                 <td align="center">
                                     <input name="item0" type="checkbox" />
                                 </td>
                                 <td>
                                     <xsl:value-of select="item" />
+                                </td>
+                                <td>
+                                    <xsl:value-of select="session" />
                                 </td>
                                 <td align="right">
                                     <xsl:value-of select="price" />
