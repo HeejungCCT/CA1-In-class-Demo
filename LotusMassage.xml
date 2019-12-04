@@ -41,11 +41,6 @@
       <session>90 minutes</session>
       <price>€90</price>
     </type>
-    <type>
-      <item>Kimchi</item>
-      <session>40 minutes</session>
-      <price>5.00</price>
-    </type>
   </section>
   <section name="Package">
     <type>
@@ -79,6 +74,11 @@
       <item>90 minutes</item>
       <session>1 session</session>
       <price>€90</price>
+    </type>
+    <type>
+      <item>Christmas gift</item>
+      <session>3 hours</session>
+      <price>€180</price>
     </type>
   </section>
 </massagemenu>

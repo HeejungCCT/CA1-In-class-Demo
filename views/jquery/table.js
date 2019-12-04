@@ -41,7 +41,7 @@ function delete_row(sec, ent)
 			data:
 			{
 				section: sec,
-				entree: ent
+				type: ent
 			},
 			cache: false,
 			success: setTimeout(draw_table, 1000)
