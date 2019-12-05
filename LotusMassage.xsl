@@ -23,7 +23,7 @@
                             <xsl:for-each select="type">
                             <tr id="{position()}">
                                 <!-- <xsl:attribute name="pregnant">
-                                    <xsl:value-of select="boolean(./@pregnant)" />
+                                    <xsl:value-of select="boolean(./@pregnant)" /> // dunno how it works~~~~~~~~~~
                                 </xsl:attribute> -->
                                 <td align="left" >
                                     <xsl:value-of select="item" />
@@ -31,7 +31,7 @@
                                 <td align="left">
                                     <xsl:value-of select="session" />
                                 </td>
-                                <td align="right">
+                                <td align="right"> 
                                     <xsl:value-of select="price" />
                                 </td>
                                 <td align="center">

@@ -16,11 +16,12 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
   background-color: #d5f7d0;
+  text-align: right;
 }
 table, th, td {
      border-collapse: collapse;
      border: 1px solid rgb(33, 100, 4);
-     text-align: center;
+     text-align: center;   
 
 }
  table {
@@ -37,6 +38,6 @@ table, th, td {
      font-style: oblique;
 }
 .selected {
-            background-color: #043004;
+            background-color: #024602;
             color: #FFF;
 }

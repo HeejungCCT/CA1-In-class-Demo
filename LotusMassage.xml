@@ -22,7 +22,7 @@
       <price>€60</price>
     </type>
     <type>
-      <item>Swidish Massage</item>
+      <item>Swedish Massage</item>
       <session>1 hour</session>
       <price>€60</price>
     </type>
@@ -77,7 +77,7 @@
     </type>
     <type>
       <item>Christmas gift</item>
-      <session>3 hours</session>
+      <session>3 sessions</session>
       <price>€180</price>
     </type>
   </section>

@@ -77,15 +77,15 @@ router.post('/post/json', function(req, res) {
 
 });
 
-// POST request to add to JSON & XML files
+// POST request to delete to JSON & XML files
 router.post('/post/delete', function(req, res) {
 
-  // Function to read in a JSON file, add to it & convert to XML
+  // Function to read in a JSON file, delete to it & convert to XML
   function deleteJSON(obj) {
     // Function to read in XML file, convert it to JSON, delete the required object and write back to XML file
     xmlFileToJs('LotusMassage.xml', function(err, result) {
       if (err) throw (err);
-      //This is where we delete the object based on the position of the section and position of the entree, as being passed on from index.html
+      //This is where we delete the object based on the position of the section and position of the type, as being passed on from index.html
       delete result.massagemenu.section[obj.section].type[obj.type];
       //This is where we convert from JSON and write back our XML file
       jsToXmlFile('LotusMassage.xml', result, function(err) {
