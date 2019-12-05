@@ -41,11 +41,6 @@
       <session>90 minutes</session>
       <price>€90</price>
     </type>
-    <type>
-      <item>abc</item>
-      <session>ddd</session>
-      <price>1</price>
-    </type>
   </section>
   <section name="Package">
     <type>

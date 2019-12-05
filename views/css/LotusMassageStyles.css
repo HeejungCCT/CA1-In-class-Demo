@@ -5,9 +5,9 @@ html {
 body {
   /* Margin bottom by footer height */
   background-image: url(https://cdn.pixabay.com/photo/2015/01/05/22/28/wellness-589770_960_720.jpg);
-  background-size: cover;
+  background-size: cover; 
   margin-bottom: 60px;
-  background-color: #d5f7d0;
+  background-color: #b4c4c9;
 
 }
 .footer {
@@ -17,15 +17,17 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
-  background-color: #d5f7d0;
+  /* background-color: #f3f4f7; */
   text-align: right;
 }
 table, th, td {
-    background-color: rgba(255, 255, 255, 0.6);
-     border-collapse: collapse;
-     border: 1px solid rgb(33, 100, 4);
-     text-align: center;   
-
+  background-color: rgba(255, 255, 255, 0.4);
+  border-collapse: collapse;
+  border: 1px solid rgb(33, 100, 4);
+  text-align: center;   
+}
+.container {
+     background-color: rgba(255, 255, 255, 0.4); 
 }
  table {
      border-collapse: collapse;
