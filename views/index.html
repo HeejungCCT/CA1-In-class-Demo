@@ -10,16 +10,16 @@
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/LotusMassageStyles.css" rel="stylesheet">
-     <script src="js/PaddysCafeCode.js"></script>
+    <script src="js/LotusMassage.js"></script>
     <script>
         window.addEventListener("load", function() {
             document.forms[1].txtBillAmt.value = calculateBill('menuTable');
             document.querySelector("#calcBill").addEventListener("click", function() {
-                document.forms[1].txtBillAmt.value = calculateBill('menuTable');
+            document.forms[1].txtBillAmt.value = calculateBill('menuTable');
             });
             document.querySelector("#showVeg").addEventListener("click", function() {
                 highlightVegetarian('menuTable', this.checked);
-            });
+            }); 
         });
     </script>
 </head>
@@ -65,7 +65,7 @@
 						<input class="form-control" type="text" name="session" placeholder="Session">
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="text" name="price" placeholder="Price">
+						<input class="form-control" type="text" name="price" placeholder="Price(€)">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>
@@ -74,9 +74,9 @@
                 <form>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                                                        <span class="input-group-text">&euro;</span>
+                            <span class="input-group-text">&euro;</span>
                         </div>
-                        <input type="text" class="form-control" aria-label="Total" name="txtBillAmt">
+                            <input type="text" class="form-control" aria-label="Total" name="txtBillAmt">
                         <div class="input-group-append">
                         <div class="input-group-text">
                             <input type="checkbox" id="showVeg" aria-label="Checkbox for following text input">

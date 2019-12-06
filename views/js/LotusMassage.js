@@ -1,4 +1,4 @@
- // returns a number that represents the sum of all the selected menu
+// returns a number that represents the sum of all the selected menu
 // item prices.
 function calculateBill(idMenuTable) {
     var fBillTotal = 0.0;
@@ -48,4 +48,4 @@ function getParentTag(oNode, sParentType) {
         oParent = oParent.parentNode;
     };
     return oParent;
-}; 
+};
