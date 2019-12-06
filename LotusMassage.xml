@@ -46,11 +46,6 @@
       <session>2 hours</session>
       <price>120.00</price>
     </type>
-    <type>
-      <item/>
-      <session/>
-      <price/>
-    </type>
   </section>
   <section name="Package">
     <type>
