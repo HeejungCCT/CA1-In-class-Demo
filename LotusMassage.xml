@@ -7,16 +7,6 @@
       <price>35.00</price>
     </type>
     <type>
-      <item>Head Massage</item>
-      <session>30 minutes</session>
-      <price>35.00</price>
-    </type>
-    <type>
-      <item>Foot Reflexology</item>
-      <session>30 minutes</session>
-      <price>35.00</price>
-    </type>
-    <type>
       <item>Swedish Massage</item>
       <session>1 hour</session>
       <price>60.00</price>
@@ -37,14 +27,9 @@
       <price>90.00</price>
     </type>
     <type>
-      <item>Christmas gift</item>
-      <session>30 minutes</session>
-      <price>0.00</price>
-    </type>
-    <type>
-      <item>Back, Neck and Shoulders Massage</item>
-      <session>2 hours</session>
-      <price>120.00</price>
+      <item>Therapeutic Massage</item>
+      <session>1 hour</session>
+      <price>60.00</price>
     </type>
   </section>
   <section name="Package">
