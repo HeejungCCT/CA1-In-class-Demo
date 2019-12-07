@@ -1,0 +1,44 @@
+const expAutoSan = require('express-autosanitizer');
+
+app.use(express.json());
+// Mount here
+app.use(expAutoSan.all);
+app.post('/', (req, res, next) => {
+  //req is automatically sanitized, as middleware is used for all routes
+  doYourStuff(req.autosan.body);
+  res.render("pagewithtrusteddata");
+});
+
+app.use(express.json());
+// Mount here
+app.use(expAutoSan.allUnsafe);
+//no extra middleware needed
+app.post('/', (req, res, next) => {
+  //req is automatically sanitized, as middleware is used for all routes
+  doYourStuff(req.body);
+  res.render("pagewithtrusteddata");
+});
+
+//use the middleware
+app.post('/', expAutoSan.route, (req, res, next) => {
+  //req is automatically sanitized, as middleware is used for body, query and params of this route
+  //req is not mutated, results are stored in req.autosan.body, req.autosan.params, req.autosan.query
+  doYourStuff(req.autosan.body);
+  res.render("pagewithtrusteddata");
+});
+
+//use different middleware
+app.post('/', expAutoSan.routeUnsafe, (req, res, next) => {
+  //req is automatically sanitized, as middleware is used for body, query and params of this route
+  //req IS mutated, results are stored in req.body, req.params, req.query
+  doYourStuff(req.body);
+  res.render("pagewithtrusteddata");
+});
+
+app.get('/', (req, res, next) => {
+  //you can pass array/object/string or whatever you want, only string parts will be sanitized
+  //again, do not pass highly-nested structures, this middleware works recursively
+  let mySanitizedData = expAutoSan.sanitizeIt(myDirtyData);
+  doYourStuff(mySanitizedData);
+  res.render("pagewithtrusteddata");
+});

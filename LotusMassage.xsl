@@ -20,13 +20,13 @@
                                     <xsl:value-of select="@name" />
                                 </td>
                             </tr>
-                            <xsl:for-each select="type">
+                                <xsl:for-each select="type">
                             <tr id="{position()}">
                                 <!-- <xsl:attribute name="pregnant">
                                     <xsl:value-of select="boolean(./@pregnant)" /> 
                                 </xsl:attribute> -->
                                 <td align="left" >
-                            <xsl:value-of select="item" />
+                                    <xsl:value-of select="item" />
                                 </td>
                                 <td align="left">
                                     <xsl:value-of select="session" />

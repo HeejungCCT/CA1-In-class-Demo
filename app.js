@@ -45,7 +45,6 @@ router.get('/get/html', function(req, res) {
     var xsl = fs.readFileSync('LotusMassage.xsl', 'utf8'); //We are reading in the XSL file
     var doc = xmlParse(xml); //Parsing our XML file
     var stylesheet = xmlParse(xsl); //Parsing our XSL file
-
     var result = xsltProcess(doc, stylesheet); //Execute Transformation
 
     res.end(result.toString()); //We render the result back to the user converting it to a string before serving
@@ -73,7 +72,6 @@ router.post('/post/json', function(req, res) {
 
   // Re-direct the browser back to the page, where the POST request came from
   res.redirect('back');
-
 });
 
 // POST request to delete to JSON & XML files
@@ -95,7 +93,6 @@ router.post('/post/delete', function(req, res) {
 
   // Call appendJSON function and pass in body of the current POST request
   deleteJSON(req.body);
-
 });
 
 //This is where we as the server to be listening to user with a specified IP and Port
