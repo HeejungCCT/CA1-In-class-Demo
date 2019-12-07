@@ -76,9 +76,9 @@
       <price>90.00</price>
     </type>
     <type>
-      <item>Christmas gift(1 hour x 5 sessions) </item>
-      <session>3 sessions</session>
-      <price>250.00</price>
+      <item>Christmas gift</item>
+      <session>30 minutes x 3 sessions</session>
+      <price>90.00</price>
     </type>
   </section>
 </massagemenu>
